@@ -1,0 +1,368 @@
+/* 
+
+---color scheme---
+blue: rgb(6, 75, 117)
+light blue: rgb(220,53,69)
+red: rgb(220,53,69)
+yellow: rgb(194, 191, 19)
+brown: rgb(117, 12, 13)
+
+*/
+
+.background {
+  background-color: rgb(6,75,117);
+  padding-top: 2em;
+  padding-bottom: 2em;
+  min-height: 63.3vh;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/*** Navbar ***/
+
+body::before {
+  display:block;
+  content: '';
+  height: 72px;
+}
+
+.logo {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  margin-right: 0.25rem;
+  margin-left: 0.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.brand-name {
+  font-size: 2em !important;
+  padding-top: 12px !important;
+}
+
+.navbar > .container {
+  justify-content: start !important;
+}
+
+.navbar-toggler {
+  margin-left: auto !important;
+  border: 2px solid transparent;
+}
+
+
+.navbar-dark {
+  color: rgba(255,255,255,.90) !important;
+}
+
+/* main page */
+
+.hero::before {
+  background-image: url(../images/header/header_small.jpg);
+}
+
+.hero-container {
+  background-image: url("../images/main/main-hero_small.jpg");
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)) , url("../images/main/main-hero_small.jpg");
+  max-height: 600px;
+}
+
+/* page header */
+
+.display-2 {
+  letter-spacing: 3px;
+}
+
+.jumbotron {
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 18vh;
+  max-height: 200px;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; height: 100%;
+  background-image: url(../images/header/header_small.jpg);
+  background-size: cover;
+  filter: opacity(0.2) !important;
+}
+
+.hero-inside {
+  /* This will make it stack on top of the ::before */
+  position: relative;
+}
+
+/* FAQ page */
+
+.faq {
+  margin: 20px;
+}
+
+/* Contact us page */
+
+.form {
+  margin: 0 2em 0 2em;
+  background-color: lightgray;
+  padding: 20px;
+}
+
+legend {
+  font-size: inherit;
+}
+
+.form-container > button[type="submit"] {
+  width: 70%;
+}
+
+/* About us page */
+
+.about-container {
+  background-color: white;
+  padding: 20px;
+}
+
+.img-border {
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.display-3 {
+  font-weight: 400 !important;
+}
+
+.emphasis {
+  color: rgb(220,53,69);
+  font-weight: 500 !important;
+}
+
+/* schedule page */
+
+.schedules > .lead {
+  font-weight: 400;
+}
+
+.schedules {
+  margin-top: 15px;
+}
+
+/* directions page */
+
+.list-group {
+  margin: 10px;
+}
+
+.directions-container {
+  padding-bottom: 10px;
+}
+
+.directions-container > iframe {
+  border: 0;
+}
+
+.map-container {
+  height: 50vh;
+}
+
+.directions-container > .lead {
+  font-weight: 600;
+}
+
+/* gallery page */
+
+.card-body {
+  padding: 0.2em;
+}
+
+p.card-title {
+  font-size: 1em;
+}
+
+/* announcemens page */
+
+.announcements {
+  background-color: rgb(6,75,117);
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.announcements > .container > div {
+  width: 100%;
+  height: 0;
+  padding-bottom: 78%;
+  position: relative;
+}
+
+.announcements > .container > div > iframe {
+  position: absolute
+}
+/* tablet */
+@media (min-width: 768px) {
+  /* main page */
+  .hero::before {
+    background-image: url(../images/header/header_medium.jpg);
+  }
+
+  .hero-container {
+    background-image: url("../images/main/main-hero_medium.jpg");
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)) , url("../images/main/main-hero_medium.jpg");
+  }
+
+  .hero-text {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  /* contact page */
+
+  .form {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .form > button[type="submit"] {
+    width: 30%;
+    margin: 0 auto;
+  }
+
+  /* FAQ page */
+  .faq {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  /* schedule page */
+  .schedules {
+    width: 80%;
+  }
+}
+
+/* laptop */
+@media (min-width: 769px) {
+  /* main page */
+  .hero::before {
+    background-image: url(../images/header/header_large.jpg);
+  }
+
+  .hero-container {
+    height: 65vh;
+    background-image: url("../images/main/main-hero_large.jpg");
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)) , url("../images/main/main-hero_large.jpg");
+  }
+
+  .hero-text {
+    width: 65%;
+    margin: 0 auto;
+  }
+
+  /* about us page */
+  .about {
+    background: rgb(6,75,117);
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+
+  .about-container {
+    border-radius: 10px;
+    width: 70%;
+    padding: 20px 100px;
+  }
+
+  /* contact page */
+
+  .form {
+    width: 70%;
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  .form > button[type="submit"] {
+    width: 30%;
+    margin: 0 auto;
+  }
+
+  /* FAQ page */
+  .faq {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .announcements > .container {
+    width: 65%;
+  }
+
+  /* schedule page */
+  .schedules {
+    width: 70%;
+  }
+}
+
+/* extra large screens */
+@media (min-width: 2560px) {
+  html {
+    width: 60%;
+    margin: 0 auto;
+    background: black;
+  }
+
+  nav {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  /* main page */
+  .hero::before {
+    background-image: url(../images/header/header_large.jpg);
+  }
+
+  .hero-container {
+    height: 65vh;
+    background-image: url("../images/main/main-hero_large.jpg");
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)) , url("../images/main/main-hero_large.jpg");
+  }
+
+  .hero-text {
+    width: 65%;
+    margin: 0 auto;
+  }
+
+  /* contact page */
+
+  .form {
+    width: 70%;
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  .form > button[type="submit"] {
+    width: 30%;
+    margin: 0 auto;
+  }
+
+  /* FAQ page */
+  .faq {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
